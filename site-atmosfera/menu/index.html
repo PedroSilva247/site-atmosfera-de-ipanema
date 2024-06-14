@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atmosfera de Ipanema</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navigation">
+        
+        <img src="imagens/Atmosfera_logotipo.svg" alt="" class="logo-atmosfera">
+
+        <table class="nav-table">
+            <tr>
+                <th class="sec-table">
+                    <p class="nav-botton">Sobre</p>
+                </th>
+                <th>
+                    <img src="imagens/Line1.svg" alt="" class="line1">
+                </th>
+                <th class="sec-table">
+                    <p class="nav-botton">Cardápio</p>
+                </th>
+                <th>
+                    <img src="imagens/Line1.svg" alt="" class="line1">
+                </th>
+                <th class="sec-table">
+                    <p class="nav-botton">Eventos</p>
+                </th>
+                <th>
+                    <img src="imagens/Line1.svg" alt="" class="line1">
+                </th>
+                <th class="sec-table">
+                    <p class="nav-botton">Contato</p>
+                </th>
+            </tr>
+        </table>
+
+        <div class="div-menu-button">
+            <img src="imagens/menu-img.svg" alt="" class="menu-button">
+        </div>
+    </nav>
+
+    <section class="sec-img1">
+    </section>
+    <section class="sec1">
+        <div class="linha-contorno">
+            <table class="table-escolha">
+                <tr class="tr-escolha">
+                    <th class="sec1-evento escolha">
+                        <p class="escolha-p" onclick="linhaEsquerda()">Realize um evento</p>
+                    </th>
+                    <th class="sec1-cardapio escolha">
+                        <p class="escolha-p" onclick="linhaCentro()">Consulte nosso cardápio</p>
+                    </th>
+                    <th class="sec1-reserva escolha">
+                        <p class="escolha-p" onclick="linhaDireita()">Reserve sua mesa</p>
+                    </th>
+                </tr>
+                <tr class="tr-linha-selecionado">
+                    <th>
+                        <hr class="linha-selecionado linha-selecionado-esquerda" id="linha-selecionado-esquerda">
+                    </th>
+                    <th>
+                        <hr class="linha-selecionado linha-selecionado-meio" id="linha-selecionado-meio">
+                    </th>
+                    <th>
+                        <hr class="linha-selecionado linha-selecionado-direita" id="linha-selecionado-direita">
+                    </th>
+                </tr>
+            </table>
+            <table class="tabela-texto-escolha">
+                <tr class="tr-titulo">
+                    <th class="th-linha">
+                        <hr class="linha-titulo linha-titulo-esquerda">
+                    </th>
+                    <th class="th-titulo-escolha">
+                        <h1 class="titulo-escolha" id="titulo-escolha">Consulte nosso cardápio</h1>
+                    </th>
+                    <th class="th-linha">
+                        <hr class="linha-titulo linha-titulo-direita">
+                    </th>
+                </tr>
+            </table>
+            <div class="div-texto-escolha">
+                <p class="texto" id="texto-escolha">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, tempora delectus velit consequatur modi laudantium animi voluptatem atque quasi adipisci nesciunt, provident, alias quaerat qui cumque ratione sunt ipsa doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, corporis cum! Quam maxime repellat eligendi obcaecati voluptatum doloremque dicta. Itaque.
+                </p>
+            </div>
+            <div class="div-botao-escolha">
+                <button class="botao-escolha ripple" id="botao-escolha">
+                    Consultar cardápio
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2">
+        <div class="div-metade-bloco-texto">
+
+            
+            <div class="div-img-sec2">
+            <img src="imagens/fotos/foto-sec2.png" alt="" class="img-sec2">
+            </div>
+
+
+            <div class="bloco-texto">
+                <div class="linha-contorno-sec2">
+                    <div class="conteudo-sec2">
+                        <div class="div-titulo-sec2">
+                            <h1 class="titulo-sec2">Ambiente</h1>
+                        </div>
+                        <div class="div-texto-sec2">
+                            <p class="texto-sec2">Lorem ipsum dolor sit amet consectetur. Est eu dignissim mi erat morbi aliquam senectus. Fusce mattis lacinia morbi nisl eget elementum pellentesque pharetra. Mi eleifend feugiat faucibus vestibulum lobortis. Sed purus sit enim facilisis.</p>
+                        </div>
+                        <div class="div-botao-sec2">
+                            <button class="botao-sec2 ripple1">Sobre o restaurante</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="sec-img2">
+    </section>
+
+
+    <section class="sec3">
+        <div class="container-comida">
+            <div class="linha-contorno-sec3">
+                <h1 class="titulo-sec3">
+                    Comida
+                </h1>
+                <p class="texto-sec3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quibusdam sunt et veniam, saepe vel, in repellendus ut nam corporis at dignissimos id error facere quod exercitationem deleniti hic harum?
+                </p>
+                <div class="div-botao-sec3">
+                    <button class="botao-sec3 ripple2">
+                        Consulte o cardápio
+                    </button>
+                </div>
+                <div class="div-img-sec3">
+                    <img src="imagens/fotos/foto-salmao.png" alt="" class="img-sec3">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

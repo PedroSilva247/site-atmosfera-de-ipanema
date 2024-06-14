@@ -1,0 +1,696 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(fonts/Montserrat-Regular.ttf);
+}
+html {
+    height: 100%;
+}
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.navigation {
+    width: 100%;
+    height: 172px;
+    flex-shrink: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.66) 10.87%, rgba(0, 0, 0, 0.39) 44.29%, rgba(0, 0, 0, 0.39) 93.6%);
+    position: fixed;
+    z-index: 10;
+}
+@media (max-height: 700px) {
+    .navigation {
+        height: 85px;
+    }
+    .logo-atmosfera {
+        top: -3px !important;
+    }
+    .div-menu-button {
+        top: 14px !important;
+    }
+    .logo-atmosfera {
+        width: 180px !important;
+    }
+    .nav-table {
+        top: 23px !important;
+    }
+
+
+}
+
+.logo-atmosfera {
+    width: 260px;
+    height: 94px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 39px;
+    left: 10.625%;
+    cursor: pointer;
+}
+
+@media (max-width: 850px){
+    .nav-table {
+        display: none;
+    }
+    .logo-atmosfera {
+        animation: 0.1s linear ani1 ;
+        width: 180px;
+        
+    }
+}
+@media (min-width: 850px){
+    .logo-atmosfera {
+        animation: 0.1s linear ani1-rev ;
+        width: 260px;
+    }
+}
+
+p.nav-botton {
+    text-align: center;
+    flex-shrink: 0;
+    color: #FEFEFE;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    width: 100%;
+    cursor: pointer;
+}
+.line1 {
+    position: relative;
+    top: 2px;
+    background: #FEFEFE;
+}
+.sec-table {
+    width: 25%;
+}
+.sec-table :hover {
+    color: #e6e3e3;
+}
+.nav-table {
+    right: 10px;
+    position: absolute;
+    width: 44%;
+    min-width: 450px;
+    top: 68px;
+    height: 35px;
+    border-spacing: 0;
+}
+
+/* ----------------------BOTAO MENU------------------------- */
+
+.div-menu-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 8%;
+    top: 56px;
+    height: 60px;width: 70px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.div-menu-button :hover {
+    background-color: rgba(0, 0, 0, 0.089);
+}
+.div-menu-button :active {
+    background-color: rgba(0, 0, 0, 0.267);
+}
+@media (min-width: 850px){
+    .div-menu-button {
+        display: none;
+    }
+}
+.menu-button {
+    height: 28px;
+    padding: 16px;
+    border-radius: 10px;
+}
+@media (max-width: 400px){
+    .menu-button {
+        height: 18px;
+    }
+    .logo-atmosfera {
+        width: 130px;
+    }
+}
+/* --------------------------------------------------------------- */
+
+.sec-img1 {
+    background-image: url(imagens/fotos/atmosfera-foto-frente.png);
+    width: 100%; height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* SEC ESCOLHA */
+
+.sec1 {
+    width: 100%;
+    
+    height: auto;
+    flex-shrink: 0;
+    background-color: #FEFEFE;
+    position: relative;
+}
+
+.linha-contorno {
+    width: auto;
+    height: auto;
+    border: 1px solid #827A66;
+    position: relative;
+    margin: 30px;
+}
+/* ----------------------------------------------------------- */
+.table-escolha {
+    width: 100%;
+    margin: 0;
+    position: relative;
+    margin-top: 36px;
+    
+    
+}
+/* ----------------------------------------------------------- */
+th.sec1-evento {
+    padding-left: 50px;
+}
+th.sec1-reserva {
+    padding-right: 50px;
+}
+.escolha {
+    color: #534537;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 15px; padding-right: 15px;
+    
+}
+p.escolha-p {
+    margin: 0;
+    cursor: pointer;
+}
+.escolha :hover {
+    color: #b99a7b;
+}
+.escolha :active {
+    color: #8a6540;
+}
+@media (max-width: 700px){
+    .escolha {
+        font-size: 14px;
+        padding-left: 7px; padding-right: 7px;
+    }
+    th.sec1-evento {
+        padding-left: 20px;
+    }
+    th.sec1-reserva {
+        padding-right: 20px;
+    }
+}
+@media (max-width: 300px){
+    .escolha {
+        font-size: 14px;
+        padding-left: 4px; padding-right: 4px;
+    }
+    th.sec1-evento {
+        padding-left: 10px;
+    }
+    th.sec1-reserva {
+        padding-right: 10px;
+    }
+}
+
+.linha-selecionado {
+    width: 60px;
+    height: 2px;
+    position: relative;
+    background: #A66517;
+    border: 0;
+    transition-duration: 0.2s;
+    /* left: 32.5%; */
+}
+.linha-selecionado-esquerda {
+    left: 17.5px;
+    opacity: 0;
+    
+}
+.linha-selecionado-direita {
+    right: 17.5px;
+    opacity: 0;
+}
+
+@media (max-width: 700px) {
+    .linha-selecionado {
+        width: 40px;
+    }
+    .linha-selecionado-esquerda {
+        left: 7px;
+    }
+    .linha-selecionado-direita {
+        right: 7px;
+    }
+}
+
+/* TEXTO E TITULO ESCOLHA */
+
+.tabela-texto-escolha {
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    
+    
+}
+.th-linha {
+    width: 30%;
+}
+.linha-titulo {
+    width: 75%;
+    height: 1px;
+    background: #827A66;
+    
+    
+}
+.linha-titulo-esquerda {
+    float: right;
+    margin-right: 5px;
+}
+.linha-titulo-direita {
+    float: left;
+    margin-left: 5px;
+}
+h1.titulo-escolha {
+    color: #000;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+.th-titulo-escolha {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.texto {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 80%;
+    margin: 0;
+}
+
+.div-texto-escolha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    margin-top: 40px;
+}
+.botao-escolha {
+    width: 350px;
+    height: 60px;
+    flex-shrink: 0;
+    border: 1px solid #A66517;
+    background-color: #00000000;
+
+    color: #A66517;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.div-botao-escolha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.ripple {
+    background-position: center;
+    transition: background 0.8s;
+}
+.ripple:hover {
+    background: #9c6017 radial-gradient(circle, transparent 1%, #9c6017 1%) center/15000%;
+    color: #fefefe;
+}
+.ripple:active {
+    background-color: #995400;
+    background-size: 100%;
+    transition: background 0s;
+}
+.sec2 {
+    width: 100%;
+    height: auto;
+    background: #36312C;
+    position: relative;
+}
+.bloco-texto {
+    width: 58%;
+    height: auto;
+    flex-shrink: 0;
+    background: #524B45;
+    padding: 1px;
+    position: relative;
+    
+    margin: 40px 4% 40px 0;
+
+}
+.div-metade-bloco-texto {
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.linha-contorno-sec2 {
+    width: auto;
+    height: auto;
+    margin: 30px;
+    flex-shrink: 0;
+    border: 1px solid #e8e3de54;
+    position: relative;
+    padding: 0;
+}
+
+.conteudo-sec2 {
+    position: relative;
+}
+
+.titulo-sec2 {
+    padding: 0;
+    margin: 0;
+    color: #E8E3DE;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 35px;
+}
+.texto-sec2 {
+    padding: 0;
+    margin: 0;
+    margin-left: 8%;margin-right: 8%;
+    width: auto;
+    color: #E8E3DE;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.botao-sec2 {
+    color: #E8E3DE;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #00000000;
+    width: 350px;
+    height: 60px;
+    flex-shrink: 0;
+    border: 1px solid #E8E3DE;
+    cursor: pointer;
+}
+
+.div-titulo-sec2 {
+    width: 100%;
+    position: relative;
+    padding: 0;
+    display: block;
+}
+.div-texto-sec2 {
+    width: 100%;
+    position: relative;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-botao-sec2{
+    width: 100%;
+    position: relative;
+    margin-bottom: 35px;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ripple1 {
+    background-position: center;
+    transition: background 0.8s;
+}
+.ripple1:hover {
+    background: #E8E3DE radial-gradient(circle, transparent 1%, #E8E3DE 1%) center/15000%;
+    color: #524B45;
+}
+.ripple1:active {
+    background-color: #b8b4b0;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.div-img-sec2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-sec2 {
+    width: auto;
+    height: 390px;
+    z-index: 1;
+    left: 40px;
+    flex-shrink: 0;
+    position: relative;
+    box-shadow: -10px 10px 4px 4px rgba(36, 34, 32, 0.80);
+}
+
+.sec-img2 {
+    background-image: url(imagens/fotos/foto-deck.png);
+    width: 100%; height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+@media (max-width: 1200px) {
+    .titulo-sec2 {
+        font-size: 38px;
+    }
+    .texto-sec2 {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .bloco-texto {
+        margin: 40px 40px 40px 60px;
+        width: 90%;
+        background-color: #00000000;
+        background-image: url(imagens/fotos/imagem-fundo-ambiente.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        
+    }
+    .div-metade-bloco-texto {
+        justify-content: center;
+    }
+    .div-img-sec2 {
+        display: none !important; 
+    }  
+}
+
+@media (max-width: 1000px) {
+    .bloco-texto {
+        margin: 40px;
+        width: 90%;
+    }
+    .div-metade-bloco-texto {
+        justify-content: center;
+    }
+    .div-img-sec2 {
+        display: none !important; 
+    }  
+}
+@media (max-width: 600px) {
+    .botao-sec2 {
+        width: 205px;
+        font-size: 20px;
+    }
+    .botao-escolha {
+        width: 205px;
+        font-size: 20px;
+    }
+    h1.titulo-escolha {
+        font-size: 28px;
+    }
+    p.texto {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .bloco-texto {
+        margin-right: 6%;
+    }
+}
+@media (min-width: 1200px) {
+    .bloco-texto {
+        margin-right: 7%;
+    }
+}
+@media (min-width: 1400px) {
+    .bloco-texto {
+        margin-right: 8%;
+    }
+}
+@media (min-width: 1600px) {
+    .bloco-texto {
+        margin-right: 9%;
+    }
+}
+@media (min-width: 1800px) {
+    .bloco-texto {
+        margin-right: 10%;
+    }
+}
+@media (min-width: 2000px) {
+    .bloco-texto {
+        margin-right: 11%;
+    }
+}
+
+/* -------------------------------- SEC 3 ---------------------------------- */
+
+.sec3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background: #FEFEFE;
+}
+
+.container-comida {
+    width: 90%;
+    height: auto;
+    max-width: 1226px;
+    background: #a66617;
+    margin: 40px;
+    position: relative;
+}
+.linha-contorno-sec3 {
+    width: auto;
+    height: 100%;
+    margin: 30px;
+    border: 1px solid #D99F5A;
+    display: grid;
+    grid-template-columns: 10fr 7fr;
+}
+.titulo-sec3 {
+    color: #FEFEFE;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: normal;
+    grid-column: 1/2;
+    
+}
+.texto-sec3 {
+    color: #FEFEFE;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0 70px;
+    grid-column: 1/2;
+}
+
+.div-botao-sec3 {
+    grid-column: 1/2;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 23px 0;
+}
+.botao-sec3 {
+    width: 350px;
+    height: 60px;
+    background: 0;
+    border: 1px solid #FEFEFE;
+    color: #FEFEFE;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.img-sec3 {
+    width: 100%;
+}
+.div-img-sec3 {
+    margin: -50px 5%;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    display: flex;
+    align-items: center;
+}
+.ripple2 {
+    background-position: center;
+    transition: background 0.8s;
+}
+.ripple2:hover {
+    background: #e7e7e7 radial-gradient(circle, transparent 1%, #e7e7e7 1%) center/15000%;
+    color: #a66617;
+}
+.ripple2:active {
+    background-color: #c2c2c2;
+    background-size: 100%;
+    transition: background 0s;
+}
