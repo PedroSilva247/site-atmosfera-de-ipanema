@@ -836,3 +836,88 @@ p.texto {
     grid-row: 2/3;
     grid-column: 2/3;
 }
+
+/* --------------------------------SEC5-------------------------------- */
+.sec5 {
+    background-color: #2C2926;
+    padding-bottom: 50px;
+}
+
+.div-titulo-sec5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.titulo-sec5 {
+    color: #E8E3DE;
+    text-align: center;
+    font-family: "Libre Baskerville";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 23px;
+}
+
+
+.container-sec5 {
+    width: 100%; height: auto;
+    display: grid;
+    grid-template-columns: 19fr 250fr 19fr;
+    grid-template-rows: 1fr;
+    background-color: #00000021;
+    gap: 0.5%;
+
+    
+}
+
+.flecha-sec5 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.img-flecha-sec5 {
+    cursor: pointer;
+    margin: 6px;
+    width: 37%;
+    /* max-width: 33px;
+    min-width: 15px; */
+}
+.flecha-sec5 :hover {
+    /* CLAREAR A FLECHA */
+    
+}
+.flecha-sec5-esquerda {
+    grid-column: 1/2;
+}
+.flecha-sec5-direita {
+    grid-column: 3/4;
+    
+}
+
+.container-fotos-sec5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    
+    
+}
+.foto-sec5 {
+    width: 100%;
+    margin: 6% 0;
+}
+
+#foto1-sec5 {
+    grid-column: 1/2;
+}
+#foto2-sec5 {
+    grid-column: 2/3;
+}
+#foto3-sec5 {
+    grid-column: 3/4;
+}
+#foto4-sec5 {
+    grid-column: 4/5;
+}
