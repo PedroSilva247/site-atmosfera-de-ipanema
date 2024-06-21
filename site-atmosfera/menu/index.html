@@ -46,48 +46,52 @@
     </section>
     <section class="sec1">
         <div class="linha-contorno">
-            <table class="table-escolha">
-                <tr class="tr-escolha">
-                    <th class="sec1-evento escolha">
-                        <p class="escolha-p" onclick="linhaEsquerda()">Realize um evento</p>
-                    </th>
-                    <th class="sec1-cardapio escolha">
-                        <p class="escolha-p" onclick="linhaCentro()">Consulte nosso cardápio</p>
-                    </th>
-                    <th class="sec1-reserva escolha">
-                        <p class="escolha-p" onclick="linhaDireita()">Reserve sua mesa</p>
-                    </th>
-                </tr>
-                <tr class="tr-linha-selecionado">
-                    <th>
-                        <hr class="linha-selecionado linha-selecionado-esquerda" id="linha-selecionado-esquerda">
-                    </th>
-                    <th>
-                        <hr class="linha-selecionado linha-selecionado-meio" id="linha-selecionado-meio">
-                    </th>
-                    <th>
-                        <hr class="linha-selecionado linha-selecionado-direita" id="linha-selecionado-direita">
-                    </th>
-                </tr>
-            </table>
-            <table class="tabela-texto-escolha">
-                <tr class="tr-titulo">
-                    <th class="th-linha">
-                        <hr class="linha-titulo linha-titulo-esquerda">
-                    </th>
-                    <th class="th-titulo-escolha">
-                        <h1 class="titulo-escolha" id="titulo-escolha">Consulte nosso cardápio</h1>
-                    </th>
-                    <th class="th-linha">
-                        <hr class="linha-titulo linha-titulo-direita">
-                    </th>
-                </tr>
-            </table>
+            <div class="escolha-div escolha-div-left">
+                <p class="escolha-p" onclick="linhaEsquerda()">Realize um evento</p>
+            </div>
+            <div class="escolha-div escolha-div-center">
+                <p class="escolha-p" onclick="linhaCentro()">Consulte nosso cardápio</p>
+            </div>
+            <div class="escolha-div escolha-div-right">
+                <p class="escolha-p" onclick="linhaDireita()">Reserve sua mesa</p>
+            </div>
+            
+        
+            
+        
+            
+        
+    
+            
+            <div class="div-linha-selecionado">
+                <hr class="linha-selecionado" id="linha-selecionado-meio">
+            </div>
+        
+
+
+            
+            <div class="linha3">
+                <hr class="linha-titulo linha-titulo-esquerda">
+            </div>
+        
+            <div class="linha3">
+                <h1 class="titulo-escolha" id="titulo-escolha">Consulte nosso cardápio</h1>
+            </div>
+            
+            <div class="linha3">
+                <hr class="linha-titulo linha-titulo-direita">
+            </div>
+                    
+
+
+
+
             <div class="div-texto-escolha">
-                <p class="texto" id="texto-escolha">
+                <p class="texto-escolha" id="texto-escolha">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, tempora delectus velit consequatur modi laudantium animi voluptatem atque quasi adipisci nesciunt, provident, alias quaerat qui cumque ratione sunt ipsa doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, corporis cum! Quam maxime repellat eligendi obcaecati voluptatum doloremque dicta. Itaque.
                 </p>
             </div>
+
             <div class="div-botao-escolha">
                 <button class="botao-escolha ripple" id="botao-escolha">
                     Consultar cardápio
