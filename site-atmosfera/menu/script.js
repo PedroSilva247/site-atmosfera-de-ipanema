@@ -67,3 +67,21 @@ function linhaDireita() {
     }, 250)
 }
 linhaCentro()
+
+
+
+
+
+
+function scrollToRight() {
+    let galeria = document.getElementById('container-fotos-sec5')
+    let width = galeria.clientWidth
+    console.log(width)
+    galeria.scrollLeft += width/4
+}
+function scrollToLeft() {
+    let galeria = document.getElementById('container-fotos-sec5')
+    let width = galeria.clientWidth
+    console.log(width)
+    galeria.scrollLeft -= width/4
+}
