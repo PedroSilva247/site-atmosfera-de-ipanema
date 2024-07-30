@@ -989,7 +989,23 @@ footer {
     .titulo-sec3, .texto-sec3, .div-botao-sec3 {
         grid-column: 1/3;
     }
-    
+    /* ----------- SEC4 ------------ */
+
+    .img1-sec4 {
+        grid-row: 1/2;
+        grid-column: 1/3;
+    }
+    .img2-sec4 {
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+    .img3-sec4 {
+        display: none;
+    }
+    .img4-sec4 {
+        display: none;
+        
+    }
 }
 
 
@@ -1013,6 +1029,23 @@ footer {
     .logo-atmosfera {
         width: 180px;
     }
+
+    /* ----------- SEC4 ------------ */
+
+    .centralizador-fotos-sec4 {
+        display: none;
+    }
+
+    .div-titulo-sec4 {
+        grid-column: 1/3;
+    }
+    .div-texto-sec4 {
+        grid-column: 1/3;
+    }
+    .div-botao-sec4 {
+        grid-column: 1/3;
+    }
+
 }
 
 @media (max-width: 400px){
@@ -1028,7 +1061,7 @@ footer {
         height: 85px;
     }
     .bottom-nav {
-        margin-top: 85px;
+        margin-top: 83px;
     }
     .logo-atmosfera {
         top: -3px !important;
