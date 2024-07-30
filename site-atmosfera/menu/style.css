@@ -1024,8 +1024,11 @@ footer {
     }
 }
 @media (max-height: 700px) {
-    .navigation {
+    .top-nav {
         height: 85px;
+    }
+    .bottom-nav {
+        margin-top: 85px;
     }
     .logo-atmosfera {
         top: -3px !important;
