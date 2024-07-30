@@ -1,6 +1,6 @@
 @font-face {
     font-family: Montserrat;
-    src: url(fonts/Montserrat-Regular.ttf);
+    src: url(..//assets/fonts/Montserrat-Regular.ttf);
 }
 html {
     height: 100%;
@@ -11,13 +11,65 @@ body {
     height: 100%;
 }
 .navigation {
-    width: 100%;
-    height: 172px;
-    flex-shrink: 0;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.66) 10.87%, rgba(0, 0, 0, 0.39) 44.29%, rgba(0, 0, 0, 0.39) 93.6%);
+    display: grid;
+    grid-template-rows: auto auto;
     position: fixed;
+    width: 100%;
     z-index: 10;
 }
+
+.top-nav {
+    width: 100%;
+    height: 172px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.66) 10.87%, rgba(0, 0, 0, 0.39) 44.29%, rgba(0, 0, 0, 0.39) 93.6%);
+    position: fixed;
+    display: flex;
+    grid-row: 1/2;
+    transition-duration: 350ms;
+    z-index: 11;
+    
+
+}
+.bottom-nav {
+    display: flex;
+    height: 0;
+    width: 100%;
+    background-color: #524B45;
+    margin-top: 172px;
+    transition-duration: 350ms;
+    grid-row: 2/3;
+}
+
+.list-menu-hamburger {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    margin-top: 30px;
+    transition-duration: 350ms;
+    transform: translateY(-300px);
+
+
+}
+
+.list-menu-hamburger li {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    background-color: #6b625b;
+    padding-block: 10px;
+}
+.list-menu-hamburger li a {
+    color: #fff;
+    font-size: clamp(20px, 6vw, 26px);
+    text-decoration: none;
+    font-family: Montserrat;
+}
+
 
 
 .logo-atmosfera {
@@ -28,6 +80,7 @@ body {
     top: 39px;
     left: 10.625%;
     cursor: pointer;
+    
 }
 
 
@@ -67,6 +120,8 @@ p.nav-botton {
     border-spacing: 0;
 }
 
+
+
 /* ----------------------BOTAO MENU------------------------- */
 
 .div-menu-button {
@@ -96,7 +151,7 @@ p.nav-botton {
 /* --------------------------------------------------------------- */
 
 .sec-img1 {
-    background-image: url(imagens/fotos/atmosfera-foto-frente.png);
+    background-image: url(..//assets/images/atmosfera-foto-frente.png);
     width: 100%; height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -397,9 +452,6 @@ p.nav-botton {
 .img-sec2 {
     width: 100%;
     max-width: 450px;
-    
-
-    
 }
 
 
@@ -414,7 +466,7 @@ p.nav-botton {
 
 
 
-
+    
 
 
 .ripple1 {
@@ -529,7 +581,7 @@ p.nav-botton {
 /* ------------------------------------------------------------- */
 
 .sec-img3 {
-    background-image: url(imagens/fotos/img-mesa-com-flor.png);
+    background-image: url(..//assets/images/img-mesa-com-flor.png);
     width: 100%; height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -735,6 +787,7 @@ p.nav-botton {
     overflow-x: scroll;
     scroll-behavior: smooth;
     justify-content: space-between;
+    touch-action: cross-slide-x;
 }
 
 .container-fotos-sec5::-webkit-scrollbar {
@@ -744,11 +797,13 @@ p.nav-botton {
 
 img.foto-sec5 {
     width: clamp(200px, 20vw, 300px);
-    margin: 6% 0;
+    margin: 2% 0;
 }
 div.foto-sec5 {
     width: 100%;
-    margin: 6% 0;
+    margin: 2% 0;
+    display: flex;
+    align-items: center;
 }
 
 #foto1-sec5 {
@@ -909,7 +964,7 @@ footer {
     .bloco-texto {
         grid-column: 1/3;
         background-color: #00000000;
-        background-image: url(imagens/fotos/imagem-fundo-ambiente.png);
+        background-image: url(..//assets/images/imagem-fundo-ambiente.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -923,7 +978,7 @@ footer {
     .container-comida {
         width: 90%;
         background-color: #e9000000;
-        background-image: url(imagens/fotos/foto-fundo-salmao.png);
+        background-image: url(..//assets/images/foto-fundo-salmao.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

@@ -7,39 +7,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navigation">
-        
-        <img src="imagens/Atmosfera_logotipo.svg" alt="" class="logo-atmosfera">
-
-        <table class="nav-table">
-            <tr>
-                <th class="sec-table">
-                    <p class="nav-botton">Sobre</p>
-                </th>
-                <th>
-                    <img src="imagens/Line1.svg" alt="" class="line1">
-                </th>
-                <th class="sec-table">
-                    <p class="nav-botton">Cardápio</p>
-                </th>
-                <th>
-                    <img src="imagens/Line1.svg" alt="" class="line1">
-                </th>
-                <th class="sec-table">
-                    <p class="nav-botton">Eventos</p>
-                </th>
-                <th>
-                    <img src="imagens/Line1.svg" alt="" class="line1">
-                </th>
-                <th class="sec-table">
-                    <p class="nav-botton">Contato</p>
-                </th>
-            </tr>
-        </table>
-
-        <div class="div-menu-button">
-            <img src="imagens/menu-img.svg" alt="" class="menu-button">
+    <nav class="navigation" id="nav">
+        <div class="top-nav" id="top-nav">
+            <img src="..//assets/icons/Atmosfera_logotipo.svg" alt="" class="logo-atmosfera">
+    
+            <table class="nav-table">
+                <tr>
+                    <th class="sec-table">
+                        <p class="nav-botton">Sobre</p>
+                    </th>
+                    <th>
+                        <img src="..//assets/icons/Line1.svg" alt="" class="line1">
+                    </th>
+                    <th class="sec-table">
+                        <p class="nav-botton">Cardápio</p>
+                    </th>
+                    <th>
+                        <img src="..//assets/icons/Line1.svg" alt="" class="line1">
+                    </th>
+                    <th class="sec-table">
+                        <p class="nav-botton">Eventos</p>
+                    </th>
+                    <th>
+                        <img src="..//assets/icons/Line1.svg" alt="" class="line1">
+                    </th>
+                    <th class="sec-table">
+                        <p class="nav-botton">Contato</p>
+                    </th>
+                </tr>
+            </table>
+    
+            <div class="div-menu-button">
+                <img src="..//assets/icons/menu-img.svg" alt="" class="menu-button" onclick="menu()">
+            </div>
         </div>
+        <div class="bottom-nav" id="bottom-nav">
+            <ul class="list-menu-hamburger" id="list-menu-hamburger">
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Cardápio</a></li>
+                <li><a href="">Eventos</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </div>
+        
     </nav>
     
     <section class="sec-img1">
@@ -105,7 +115,7 @@
 
             
             <div class="div-img-sec2">
-                <img src="imagens/fotos/foto-sec2.png" alt="" class="img-sec2">
+                <img src="..//assets/images/foto-sec2.png" alt="" class="img-sec2">
             </div>
 
 
@@ -147,7 +157,7 @@
                     </button>
                 </div>
                 <div class="div-img-sec3">
-                    <img src="imagens/fotos/foto-salmao.png" alt="" class="img-sec3">
+                    <img src="..//assets/images/foto-salmao.png" alt="" class="img-sec3">
                 </div>
                 
             </div>
@@ -184,10 +194,10 @@
 
             <div class="centralizador-fotos-sec4">
                 <div class="container-fotos-sec4">
-                    <img src="imagens/fotos/img1-sec4.png" alt="" class="img-sec4 img1-sec4">
-                    <img src="imagens/fotos/img2-sec4.png" alt="" class="img-sec4 img2-sec4">
-                    <img src="imagens/fotos/img3-sec4.png" alt="" class="img-sec4 img3-sec4">
-                    <img src="imagens/fotos/img4-sec4.png" alt="" class="img-sec4 img4-sec4">
+                    <img src="..//assets/images/img1-sec4.png" alt="" class="img-sec4 img1-sec4">
+                    <img src="..//assets/images/img2-sec4.png" alt="" class="img-sec4 img2-sec4">
+                    <img src="..//assets/images/img3-sec4.png" alt="" class="img-sec4 img3-sec4">
+                    <img src="..//assets/images/img4-sec4.png" alt="" class="img-sec4 img4-sec4">
                 </div>
             </div>
            
@@ -200,31 +210,26 @@
         </div>
         <div class="container-sec5">
             <div class="flecha-sec5 flecha-sec5-esquerda" onclick="scrollToLeft()">
-                <img src="imagens/flecha-esquerda.svg" alt="" class="img-flecha-sec5">
+                <img src="..//assets/icons/flecha-esquerda.svg" alt="" class="img-flecha-sec5">
                 
             </div>
             <div class="container-fotos-sec5" id="container-fotos-sec5">
-                <div class="foto-sec5 foto-sec5-1">
-                    <img src="imagens/fotos/img-1-sec5.png" alt="" class="foto-sec5" id="foto1-sec5">
-                </div>
-                <div class="foto-sec5 foto-sec5-2">
-                    <img src="imagens/fotos/img-2-sec5.png" alt="" class="foto-sec5" id="foto2-sec5">
-                </div>
-                <div class="foto-sec5 foto-sec5-3">
-                    <img src="imagens/fotos/img-3-sec5.png" alt="" class="foto-sec5" id="foto3-sec5">
-                </div>
-                <div class="foto-sec5 foto-sec5-4">
-                    <img src="imagens/fotos/img-4-sec5.png" alt="" class="foto-sec5" id="foto4-sec5">
-                </div>
-                <div class="foto-sec5 foto-sec5-3">
-                    <img src="imagens/fotos/img-3-sec5.png" alt="" class="foto-sec5" id="foto3-sec5">
-                </div>
-                <div class="foto-sec5 foto-sec5-4">
-                    <img src="imagens/fotos/img-4-sec5.png" alt="" class="foto-sec5" id="foto4-sec5">
-                </div>
+                <div class="foto-sec5 foto-sec5-1"><img src="..//assets/images/img-1-sec5.png" alt="" class="foto-sec5" id="foto1-sec5"></div>
+                <div class="foto-sec5 foto-sec5-2"><img src="..//assets/images/img-2-sec5.jpg" alt="" class="foto-sec5" id="foto2-sec5"></div>
+                <div class="foto-sec5 foto-sec5-3"><img src="..//assets/images/img-3-sec5.png" alt="" class="foto-sec5" id="foto3-sec5"></div>
+                <div class="foto-sec5 foto-sec5-4"><img src="..//assets/images/img-4-sec5.png" alt="" class="foto-sec5" id="foto4-sec5"></div>
+                <div class="foto-sec5 foto-sec5-5"><img src="..//assets/images/img-5-sec5.png" alt="" class="foto-sec5" id="foto5-sec5"></div>
+                <div class="foto-sec5 foto-sec5-6"><img src="..//assets/images/img-6-sec5.png" alt="" class="foto-sec5" id="foto6-sec5"></div>
+                <div class="foto-sec5 foto-sec5-7"><img src="..//assets/images/img-7-sec5.png" alt="" class="foto-sec5" id="foto7-sec5"></div>
+                <div class="foto-sec5 foto-sec5-8"><img src="..//assets/images/img-8-sec5.png" alt="" class="foto-sec5" id="foto8-sec5"></div>
+                <div class="foto-sec5 foto-sec5-9"><img src="..//assets/images/img-9-sec5.png" alt="" class="foto-sec5" id="foto9-sec5"></div>
+                <div class="foto-sec5 foto-sec5-10"><img src="..//assets/images/img-10-sec5.png" alt="" class="foto-sec5" id="foto10-sec5"></div>
+                <div class="foto-sec5 foto-sec5-11"><img src="..//assets/images/img-11-sec5.png" alt="" class="foto-sec5" id="foto11-sec5"></div>
+                <div class="foto-sec5 foto-sec5-12"><img src="..//assets/images/img-12-sec5.png" alt="" class="foto-sec5" id="foto12-sec5"></div>
+                <div class="foto-sec5 foto-sec5-13"><img src="..//assets/images/img-13-sec5.png" alt="" class="foto-sec5" id="foto13-sec5"></div>
             </div>
             <div class="flecha-sec5 flecha-sec5-direita" onclick="scrollToRight()">
-                <img src="imagens/flecha-direita.svg" alt="" class="img-flecha-sec5">
+                <img src="..//assets/icons/flecha-direita.svg" alt="" class="img-flecha-sec5">
             </div>
         </div>
     </section>
@@ -232,15 +237,15 @@
         <div class="container-elementos-sec6">
             <div class="container1-sec6">
                 <div class="div-pet">
-                    <div class="div-img-container1-sec6"><img src="imagens/pet.png" alt="" class="img-container1 img1-container1"></div>
+                    <div class="div-img-container1-sec6"><img src="..//assets/icons/pet.png" alt="" class="img-container1 img1-container1"></div>
                     <span class="span-container1 span1-container1">Espaço Pet</span> 
                 </div>
                 <div class="div-ar">
-                    <div class="div-img-container1-sec6"><img src="imagens/ar-condicionado.png" alt="" class="img-container1 img2-container1"></div>
+                    <div class="div-img-container1-sec6"><img src="..//assets/icons/ar-condicionado.png" alt="" class="img-container1 img2-container1"></div>
                     <span class="span-container1 span2-container1">Ar Condicionado</span> 
                 </div>
                 <div class="div-lereira">
-                    <div class="div-img-container1-sec6"><img src="imagens/lareira.png" alt="" class="img-container1 img3-container1"></div>
+                    <div class="div-img-container1-sec6"><img src="..//assets/icons/lareira.png" alt="" class="img-container1 img3-container1"></div>
                     <span class="span-container1 span3-container1">Lareira</span> 
                 </div>
                 
@@ -275,5 +280,6 @@
 
 
     <script src="script.js"></script>
+    <script src="..//assets/scripts/menuHamburger.js"></script>
 </body>
 </html>
