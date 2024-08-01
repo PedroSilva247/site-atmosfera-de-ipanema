@@ -77,13 +77,13 @@ function scrollToRight() {
     let galeria = document.getElementById('container-fotos-sec5')
     let width = galeria.clientWidth
     console.log(width)
-    galeria.scrollLeft += width/4
+    galeria.scrollLeft += width/3
 }
 function scrollToLeft() {
     let galeria = document.getElementById('container-fotos-sec5')
     let width = galeria.clientWidth
     console.log(width)
-    galeria.scrollLeft -= width/4
+    galeria.scrollLeft -= width/3
 }
 
 // ----------------- Menu Hambrguer ------------------

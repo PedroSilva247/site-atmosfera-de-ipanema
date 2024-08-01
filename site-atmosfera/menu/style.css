@@ -352,38 +352,49 @@ p.nav-botton {
 }
 
 .container-sec2 {
-    
+    width: 100%;
     margin: 40px;
     display: grid;
+    
     grid-template-columns: 1fr 2fr;
+    position: relative;
+    
 }
 .bloco-texto {
-    display: grid;
-    place-items: center;
+    
     grid-column: 2/3;
     background-color: #524B45;
     height: auto;
-    padding: 30px;
-    max-width: 843px;
+    
+    max-width: 1000px;
+
+    
+    width: 100%;
+    height: auto;
+    margin: 40px;
+    position: relative;
+    
 
 }
 .linha-contorno-sec2 {
     border: 1px solid #e8e3de54;
+    width: auto;
     
-
+    margin: 30px;
     display: grid;
-    grid-template-rows: 1fr 2fr 1fr;
+
 }
 
 
 
-.div-titulo-sec2 {
-    display: grid;
-    place-items: center;
+/* .div-titulo-sec2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 20px;
 
     grid-row: 1/2;
-}
+} */
 .titulo-sec2 {
     padding: 0;
     margin: 0;
@@ -394,20 +405,23 @@ p.nav-botton {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
 }
 
 
-.div-texto-sec2 {
-    display: grid;
-    place-items: center;
+/* .div-texto-sec2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 20px;
     grid-row: 2/3;
 
-}
+} */
 .texto-sec2 {
     padding: 0;
     margin: 0;
-    margin-left: 8%;margin-right: 8%;
+    margin-inline: 8%;
     width: auto;
     color: #E8E3DE;
     text-align: center;
@@ -419,9 +433,10 @@ p.nav-botton {
 }
 
 .div-botao-sec2 {
-    display: grid;
-    place-items: center;
-    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 23px 0;
     grid-row: 3/4;
 }
 .botao-sec2 {
@@ -433,7 +448,8 @@ p.nav-botton {
     font-weight: 400;
     line-height: normal;
     background-color: #00000000;
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 60px;
     flex-shrink: 0;
     border: 1px solid #E8E3DE;
@@ -528,8 +544,9 @@ p.nav-botton {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0 10%;
     grid-column: 1/2;
+    margin-block: 0;
+    margin-inline: 8%;
 }
 
 .div-botao-sec3 {
@@ -539,7 +556,8 @@ p.nav-botton {
     margin: 50px 0 23px 0;
 }
 .botao-sec3 {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     height: 60px;
     background: 0;
     border: 1px solid #FEFEFE;
@@ -651,7 +669,8 @@ p.nav-botton {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin: 0 70px;
+    margin-block: 0;
+    margin-inline: 8%;
 }
 
 .div-botao-sec4 {
@@ -829,9 +848,9 @@ div.foto-sec5 {
 }
 .container-elementos-sec6 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 40px 25px;
     padding: 0 25px;
 }
 
@@ -938,7 +957,7 @@ footer {
 /* ------------------------------- MEDIA --------------------------------- */
 @media (max-width: 550px) {
     button {
-        width: 205px !important;
+        max-width: 205px !important;
         font-size: 21px !important;
     }
     /* -----------------Textos----------------- */
@@ -956,6 +975,26 @@ footer {
         font-size: 14px;
         padding-left: 7px; padding-right: 7px;
     }
+
+    .container-elementos-sec6 div div span, .container-elementos-sec6 div p{
+        font-size: 13px;
+    }
+    .p-footer {
+        font-size: 13px;
+
+    }
+    .sec6 {
+        padding-block: 40px;
+    }
+    
+    
+}
+
+@media (max-width: 365px) {
+    .container-elementos-sec6 {
+        justify-content: start;
+    }
+    
 }
 
 
@@ -968,11 +1007,19 @@ footer {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        width: 90%;
         
     }
     .div-img-sec2 {
         display: none !important; 
     }  
+
+    .container-sec2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
     /* ------------- SEC3------------- */
 
     .container-comida {
@@ -1055,6 +1102,28 @@ footer {
     .logo-atmosfera {
         width: 130px;
     }
+
+    .container-comida {
+        width: 100%;
+        margin: 0;
+    }
+    .bloco-texto {
+        width: 100%;
+        margin: 0;
+    }
+
+    button {
+        max-width: 170px !important;
+        font-size: 19px !important;
+    }
+    
+
+    .linha-contorno-geral {
+        margin: 0;
+        padding: 10px 5px;
+        border: none;
+    }
+
 }
 @media (max-height: 700px) {
     .top-nav {
