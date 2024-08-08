@@ -5,14 +5,14 @@ let bottomNav = document.getElementById('bottom-nav')
     let nav = document.getElementById('nav')
     let listMenuHamburger = document.getElementById('list-menu-hamburger')
 
-function closeMenu() {
+function closeMenu(page) {
     setTimeout(() => {
             
         listMenuHamburger.style.display = 'none'
 
     }, 350)
     setTimeout(() => {
-        topNav.style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.66) 10.87%, rgba(0, 0, 0, 0.39) 44.29%, rgba(0, 0, 0, 0.39) 93.6%)"
+        topNav.style.background = "linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.66) 10.87%, rgba(0, 0, 0, 0.39) 44.29%, rgba(0, 0, 0, 0.39) 93.6%)" + page == "contato" ? ", url(../images/atmosfera-foto-frente.png)":""
 
     }, 400)
     listMenuHamburger.style.transform = "translateY(-300px)"
@@ -27,7 +27,7 @@ function openMenu() {
         listMenuHamburger.style.display = 'flex'
     },350)
     setTimeout(() => {
-        bottomNav.style.height = "300px"
+        bottomNav.style.height = "235px"
         listMenuHamburger.style.transform = "translateY(0)"
     }, 400)
 
@@ -35,10 +35,10 @@ function openMenu() {
 }
 
 
-function menu() {
+function menu(page) {
     
     if (menuOpened) {
-        closeMenu()
+        closeMenu(page)
     } else {
         openMenu()
     }

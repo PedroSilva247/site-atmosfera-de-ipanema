@@ -3,11 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <title>Atmosfera de Ipanema</title>
-    <link rel="stylesheet" href="contato.css">
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/contato.css">
+    
 </head>
 <body>
+    <nav class="navigation" id="nav">
+        <div class="top-nav" id="top-nav">
+            <a href="../menu/index.html" class="a-logo-atmosfera"><img src="../assets/icons/Atmosfera_logotipo.svg" alt="" class="logo-atmosfera"></a>
+    
+            <table class="nav-table">
+                <tr>
+                    <th class="sec-table">
+                        <a href="#"><p class="nav-botton">Sobre</p></a>
+                    </th>
+                    <th>
+                        <img src="../assets/icons/Line1.svg" alt="" class="line1">
+                    </th>
+                    <th class="sec-table">
+                        <a href="#"><p class="nav-botton">Cardápio</p></a>
+                    </th>
+                    <th>
+                        <img src="../assets/icons/Line1.svg" alt="" class="line1">
+                    </th>
+                    <th class="sec-table">
+                        <a href="#"><p class="nav-botton">Eventos</p></a>
+                    </th>
+                    <th>
+                        <img src="../assets/icons/Line1.svg" alt="" class="line1">
+                    </th>
+                    <th class="sec-table">
+                        <a href="#"><p class="nav-botton">Contato</p></a>
+                    </th>
+                </tr>
+            </table>
+    
+            <div class="div-menu-button">
+                <img src="../assets/icons/menu-img.svg" alt="" class="menu-button" onclick="menu('contato')">
+            </div>
+        </div>
+        <div class="bottom-nav" id="bottom-nav">
+            <ul class="list-menu-hamburger" id="list-menu-hamburger">
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Cardápio</a></li>
+                <li><a href="">Eventos</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+    <main>
+        <section class="sec-contato">
+            <div class="content-baloes">
+                <div class="container-baloes">
+                    <div class="div-balao">
+                        <button class="balao">
+                            <img class="svg icon-balao" src="../assets/icons/whatsapp-balao.svg" alt="">
+                            <label for="" class="label-button">Envie uma mensagem via WhatsApp</label>
+                        </button>
+                    </div>
+                    <div class="div-balao">
+                        <button class="balao">
+                            <img class="icon-balao" src="../assets/icons/telefone-balao.svg" alt="">
+                            <label for="" class="label-button">Ligue agora (51) 98454-4111</label>
+                            
+                        </button>
+                    </div>
+                    <div class="div-balao">
+                        <button class="balao">
+                            <img class="icon-balao" src="../assets/icons/direct-balao.png" alt="">
+                            <label for="" class="label-button">Envie uma mensagem via Direct</label>
+                        </button>
+                    </div>
+            </div>
+            </div>
+            
+            <div class="content-contato">
+                <div class="linha-contorno-contato">
+                    <div class="container-contato">
+                        <h1 class="titulo-contato">Entre em contato</h1>
+                    </div>
+                    <form>
+                        <input type="text" name="nome" placeholder="Nome" required>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                        <textarea name="" class="mensagem" cols="30" wrap="hard" spellcheck="true" placeholder="Digite sua mensagem..." maxlength="300" autocapitalize="sentences" required></textarea>
+                        
+                        <div class="div-botao-contato">
+                            <button class="botao-contato ripple-contato" type="submit">
+                                    Enviar Mensagem
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+     
+    <section class="sec6">
+        <div class="container-elementos-sec6">
+            <div class="container1-sec6">
+                <div class="div-pet">
+                    <div class="div-img-container1-sec6"><img src="../assets/icons/pet.png" alt="" class="img-container1 img1-container1"></div>
+                    <span class="span-container1 span1-container1">Espaço Pet</span> 
+                </div>
+                <div class="div-ar">
+                    <div class="div-img-container1-sec6"><img src="../assets/icons/ar-condicionado.png" alt="" class="img-container1 img2-container1"></div>
+                    <span class="span-container1 span2-container1">Ar Condicionado</span> 
+                </div>
+                <div class="div-lereira">
+                    <div class="div-img-container1-sec6"><img src="../assets/icons/lareira.png" alt="" class="img-container1 img3-container1"></div>
+                    <span class="span-container1 span3-container1">Lareira</span> 
+                </div>
+                
+            </div>
+            <div class="container2_3_4-sec6">
+                <div>
+                    <p class="p1-container2_3_4">Horários de funcionamento: </p>
+                    <p class="p2-container2_3_4">Sábados e domingos - 11:45 às 15:00 <br>Feriados - 11:45 às 15:00</p>
+                </div>
+            </div>
+            <div class="container2_3_4-sec6">
+                <div>
+                    <p class="p1-container2_3_4">Endereço:</p>
+                    <p class="p2-container2_3_4">Av. Guaíba, 10796 - Ipanema<br>Porto Alegre/RS, 91760-740</p>
+                </div>
+            </div>
+            <div class="container2_3_4-sec6">
+                <div>
+                    <p class="p1-container2_3_4">Telefone:</p>
+                    <p class="p2-container2_3_4">(51) 98454-4111 <br>
+                        (51) 3246-4111</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p class="p-footer">
+            Todos os direitos reservados &copy
+        </p>
+    </footer> 
+
+
+
+
+    <script src="../assets/scripts/menuHamburger.js"></script>
+    <script src="../assets/scripts/transparecerNav.js"></script>
     
 </body>
 </html>

@@ -1,6 +1,6 @@
 @font-face {
     font-family: Montserrat;
-    src: url(..//assets/fonts/Montserrat-Regular.ttf);
+    src: url(..//fonts/Montserrat-Regular.ttf);
 }
 html {
     height: 100%;
@@ -24,6 +24,9 @@ body {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.66) 10.87%, rgba(0, 0, 0, 0.39) 44.29%, rgba(0, 0, 0, 0.39) 93.6%);
     position: fixed;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     grid-row: 1/2;
     transition-duration: 350ms;
     z-index: 11;
@@ -49,7 +52,7 @@ body {
     flex-direction: column;
     width: 100%;
     gap: 5px;
-    margin-top: 30px;
+    margin-top: 20px;
     transition-duration: 350ms;
     transform: translateY(-300px);
 
@@ -65,26 +68,28 @@ body {
 }
 .list-menu-hamburger li a {
     color: #fff;
-    font-size: clamp(20px, 6vw, 26px);
+    font-size: 21px;
     text-decoration: none;
     font-family: Montserrat;
 }
 
 
+.a-logo-atmosfera {
+    margin-left: 8%;
 
+}
 .logo-atmosfera {
     width: 260px;
     height: 94px;
-    flex-shrink: 0;
-    position: absolute;
-    top: 39px;
-    left: 10.625%;
+   
     cursor: pointer;
     
 }
 
 
-
+.sec-table a {
+    text-decoration: none;
+}
 p.nav-botton {
     text-align: center;
     flex-shrink: 0;
@@ -98,6 +103,7 @@ p.nav-botton {
     margin: 0;
     width: 100%;
     cursor: pointer;
+    
 }
 .line1 {
     position: relative;
@@ -111,13 +117,10 @@ p.nav-botton {
     color: #e6e3e3;
 }
 .nav-table {
-    right: 10px;
-    position: absolute;
     width: 44%;
     min-width: 450px;
-    top: 68px;
     height: 35px;
-    border-spacing: 0;
+    margin-right: 6%;
 }
 
 
@@ -130,7 +133,6 @@ p.nav-botton {
     align-items: center;
     position: absolute;
     right: 8%;
-    top: 56px;
     height: 60px;width: 70px;
     border-radius: 10px;
     cursor: pointer;
@@ -143,7 +145,7 @@ p.nav-botton {
 }
 
 .menu-button {
-    height: 28px;
+    height: 23px;
     padding: 16px;
     border-radius: 10px;
 }
@@ -151,7 +153,7 @@ p.nav-botton {
 /* --------------------------------------------------------------- */
 
 .sec-img1 {
-    background-image: url(..//assets/images/atmosfera-foto-frente.png);
+    background-image: url(..//images/atmosfera-foto-frente.png);
     width: 100%; height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -176,7 +178,7 @@ p.nav-botton {
     border: 1px solid #827A66;
     display: grid;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 33.3333% 33.3333% 33.3333%;
     grid-template-rows: auto auto auto auto auto;
 
 }
@@ -187,7 +189,7 @@ p.nav-botton {
     justify-content: center;
     align-items: center;
     /* border: 1px solid green; */
-    margin: 10px 0 3px 0;
+    margin: 25px 10px 3px 10px;
 }
 .escolha-div-left {
     grid-column: 1/2;
@@ -202,14 +204,13 @@ p.nav-botton {
     color: #534537;
     text-align: center;
     font-family: Montserrat;
-    font-size: 19px;
+    font-size: clamp(15px, 5vw, 19px);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 0;
     cursor: pointer;
-    margin-left: 10px;
-    margin-right: 10px;
+    
 }
 .escolha-div :hover {
     color: #b99a7b;
@@ -230,7 +231,7 @@ p.nav-botton {
     
 }
 .linha-selecionado {
-    width: 60px;
+    width: 50px;
     height: 2px;
     background: #A66517;
     border: 0;
@@ -387,14 +388,7 @@ p.nav-botton {
 
 
 
-/* .div-titulo-sec2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
 
-    grid-row: 1/2;
-} */
 .titulo-sec2 {
     padding: 0;
     margin: 0;
@@ -410,14 +404,7 @@ p.nav-botton {
 }
 
 
-/* .div-texto-sec2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-    grid-row: 2/3;
 
-} */
 .texto-sec2 {
     padding: 0;
     margin: 0;
@@ -599,7 +586,7 @@ p.nav-botton {
 /* ------------------------------------------------------------- */
 
 .sec-img3 {
-    background-image: url(..//assets/images/img-mesa-com-flor.png);
+    background-image: url(..//images/img-mesa-com-flor.png);
     width: 100%; height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -790,17 +777,10 @@ p.nav-botton {
     /* CLAREAR A FLECHA */
     
 }
-.flecha-sec5-esquerda {
-    /* grid-column: 1/2; */
-}
-.flecha-sec5-direita {
-    /* grid-column: 3/4; */
-    
-}
+
 
 .container-fotos-sec5 {
     display: flex;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     gap: 2%;
     white-space: nowrap;
     overflow-x: scroll;
@@ -823,19 +803,6 @@ div.foto-sec5 {
     margin: 2% 0;
     display: flex;
     align-items: center;
-}
-
-#foto1-sec5 {
-    /* grid-column: 1/2; */
-}
-#foto2-sec5 {
-    /* grid-column: 2/3; */
-}
-#foto3-sec5 {
-    /* grid-column: 3/4; */
-}
-#foto4-sec5 {
-    /* grid-column: 4/5; */
 }
 
 
@@ -1003,7 +970,7 @@ footer {
     .bloco-texto {
         grid-column: 1/3;
         background-color: #00000000;
-        background-image: url(..//assets/images/imagem-fundo-ambiente.png);
+        background-image: url(..//images/imagem-fundo-ambiente.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1025,7 +992,7 @@ footer {
     .container-comida {
         width: 90%;
         background-color: #e9000000;
-        background-image: url(..//assets/images/foto-fundo-salmao.png);
+        background-image: url(..//images/foto-fundo-salmao.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -1144,185 +1111,5 @@ footer {
     .nav-table {
         top: 23px !important;
     }
+    
 }    
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 1200px) {
-    .titulo-sec2 {
-        font-size: 38px;
-    }
-    .texto-sec2 {
-        font-size: 17px;
-    }
-}
-
-@media (max-width: 1100px) {
-    .bloco-texto {
-        margin: 40px 40px 40px 60px;
-        width: 90%;
-        background-color: #00000000;
-        background-image: url(imagens/fotos/imagem-fundo-ambiente.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        
-    }
-    .div-metade-bloco-texto {
-        justify-content: center;
-    }
-    .div-img-sec2 {
-        display: none !important; 
-    }  
-}
-
-@media (max-width: 1000px) {
-    .bloco-texto {
-        margin: 40px;
-        width: 90%;
-    }
-    .div-metade-bloco-texto {
-        justify-content: center;
-    }
-    .div-img-sec2 {
-        display: none !important; 
-    }  
-}
-@media (max-width: 600px) {
-    .botao-sec2 {
-        width: 205px;
-        font-size: 20px;
-    }
-    .botao-escolha {
-        width: 205px;
-        font-size: 20px;
-    }
-    h1.titulo-escolha {
-        font-size: 28px;
-    }
-    p.texto {
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 1000px) {
-    .bloco-texto {
-        margin-right: 6%;
-    }
-}
-@media (min-width: 1200px) {
-    .bloco-texto {
-        margin-right: 7%;
-    }
-}
-@media (min-width: 1400px) {
-    .bloco-texto {
-        margin-right: 8%;
-    }
-}
-@media (min-width: 1600px) {
-    .bloco-texto {
-        margin-right: 9%;
-    }
-}
-@media (min-width: 1800px) {
-    .bloco-texto {
-        margin-right: 10%;
-    }
-}
-@media (min-width: 2000px) {
-    .bloco-texto {
-        margin-right: 11%;
-    }
-}
-@media (min-width: 850px){
-    .div-menu-button {
-        display: none;
-    }
-}
-@media (max-width: 400px){
-    .menu-button {
-        height: 18px;
-    }
-    .logo-atmosfera {
-        width: 130px;
-    }
-}
-    @media (max-width: 850px){
-    .nav-table {
-        display: none;
-    }
-    .logo-atmosfera {
-        animation: 0.1s linear ani1 ;
-        width: 180px;
-        
-    }
-}
-@media (min-width: 850px){
-    .logo-atmosfera {
-        animation: 0.1s linear ani1-rev ;
-        width: 260px;
-    }
-}
-@media (max-height: 700px) {
-    .navigation {
-        height: 85px;
-    }
-    .logo-atmosfera {
-        top: -3px !important;
-    }
-    .div-menu-button {
-        top: 14px !important;
-    }
-    .logo-atmosfera {
-        width: 180px !important;
-    }
-    .nav-table {
-        top: 23px !important;
-    }
-}    
-@media (max-width: 700px){
-    .escolha {
-        font-size: 14px;
-        padding-left: 7px; padding-right: 7px;
-    }
-    th.sec1-evento {
-        padding-left: 20px;
-    }
-    th.sec1-reserva {
-        padding-right: 20px;
-    }
-}
-@media (max-width: 300px){
-    .escolha {
-        font-size: 14px;
-        padding-left: 4px; padding-right: 4px;
-    }
-    th.sec1-evento {
-        padding-left: 10px;
-    }
-    th.sec1-reserva {
-        padding-right: 10px;
-    }
-}
-@media (max-width: 700px) {
-    .linha-selecionado {
-        width: 40px;
-    }
-    .linha-selecionado-esquerda {
-        left: 7px;
-    }
-    .linha-selecionado-direita {
-        right: 7px;
-    }
-}
-
-
-*/
