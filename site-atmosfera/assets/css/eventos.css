@@ -1,0 +1,30 @@
+.imagens-eventos {
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+.imagens-eventos img {
+    width: clamp(150px, 20vw, 300px);
+    margin: 10px;
+    margin-block: calc(2% + 10px) !important;
+}
+
+
+@media (width < 650px) {
+    .img1-eventos {
+        display: none;
+    }
+    .imagens-eventos img {
+        width: clamp(150px, 30vw, 300px);
+    }
+}
+@media (width < 480px) {
+    .img2-eventos {
+        display: none;
+    }
+    .imagens-eventos img {
+        width: clamp(100px, 50vw, 300px);
+        margin: 5px;
+    }
+}
